@@ -1,0 +1,880 @@
+<!--
+Developer : Shail Kothari
+Developer Email : shailkothari1111@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>IEEE | Summer School '19</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="icon" href="images/ieee.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/pop.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+		<style>
+			::-webkit-scrollbar {
+				width: 7px;
+			}
+			::-webkit-scrollbar-track {
+				box-shadow: inset 0 0 5px grey; 
+				border-radius: 10px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #24b8ff; 
+				border-radius: 10px;
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background: #007db8; 
+			}
+		</style>
+
+		<style>
+			.collapsible {
+				background-color: rgb(84,208,221);
+				color: white;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 15px;
+			}
+			.content1 {
+				padding: 0 18px;
+				display: none;
+				overflow: hidden;
+				background-color: #f1f1f1;
+			}
+		</style>
+
+	</head>
+	
+	<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+		<!-- Nav-Bar -->
+		<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+			<div class="container">
+
+				<!-- navbar header -->
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand" style="font-family: 'Gloria Hallelujah', cursive;">Summer School '19</a>
+				</div>
+
+				<div class="collapse navbar-collapse">
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#abt">About</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#speakers">Speakers</a></li>
+						<li><a href="#sche">Schedule</a></li>
+						<li><a href="#register">Register</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Home  -->
+		<section id="home" class="parallax-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12" style="margin-top:100px;">
+							<h4 class="wow bounceIn" data-wow-delay="0.3s">Organized by IEEE SB DA-IICT</h4>
+							<h1 class="wow fadeInUp" data-wow-delay="0.5s">Summer School 2019</h1>
+							<br><br>
+							<h2>Android Development<br>+<br>Blockchain</h2>
+							<!-- <h3>10<sup>th</sup> - 16<sup>th</sup> June</h3> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Line -->
+		<section class="line" style="background-color:#efefef;">
+			<div class="container" >
+				<div class="row justify-content-center">
+					<div class="col-6 col-md-4">
+						<div class="icon_box_two">
+							<i class="fa fa-calendar"></i>
+							<div class="content">
+								<h5 class="box_title">
+									DATE
+								</h5>
+								<p>
+									10-16 June 2019
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-4">
+						<div class="icon_box_two se">
+							<div class="content">
+								<i class="fa fa-map-marker"></i>
+								<h5 class="box_title">
+									location
+								</h5>
+								<p>
+									DA-IICT, Gandhinagar.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-4">
+						<div class="countdown">
+							<ul>
+								<li><span id="days"></span>days</li>
+								<li><span id="hours"></span>Hours</li>
+								<li><span id="minutes"></span>Minutes</li>
+								<li><span id="seconds"></span>Seconds</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<!-- About  -->
+		<section id="abt">
+			<div class="container">
+				<h2 class="wow fadeInLeft" data-wow-delay="0.3s">ABOUT <b>SUMMER SCHOO</b>L</h2>
+				<div class="row">
+					<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.4s">
+						<p>To Be Added</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery  -->
+		<div id="gallery">
+			<div class="container">
+				<div class="section-title text-center center">
+					<h2 class="wow fadeInLeft" data-wow-delay="0.3s">Our <b>Gallery</b></h2>
+					<hr>
+				</div>
+				
+				<div class="row"wow fadeInUp>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					</div>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					</div>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					</div>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+					</div>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+					</div>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+					</div>
+					<div class="wow fadeInUp col-sm-6 col-md-3 col-lg-3 web" style="padding-top:20px;">
+						<img src="images/8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+					</div>
+				</div>
+
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					
+					<div class="modal-content">
+
+						<div class="mySlides" style="text-align: center">
+							<img src="images/1.jpg" style="width: 70%;">
+						</div>
+						<div class="mySlides" style="text-align: center">
+							<img src="images/2.jpg" style="width: 70%;">
+						</div>
+						<div class="mySlides" style="text-align: center">
+							<img src="images/3.jpg" style="width: 70%;">
+						</div>
+						<div class="mySlides" style="text-align: center">
+							<img src="images/4.jpg" style="width: 70%;">
+						</div>
+						<div class="mySlides" style="text-align: center">
+							<img src="images/5.jpg" style="width: 70%;">
+						</div>
+						<div class="mySlides" style="text-align: center">
+							<img src="images/6.jpg" style="width: 70%;">
+						</div>
+						<div class="mySlides" style="text-align: center">
+							<img src="images/7.jpg" style="width: 70%;">
+						</div>
+						<div class="mySlides" style="text-align: center">
+							<img src="images/8.jpg" style="width: 70%;">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Speakers  -->
+		<section id="speakers" class="parallax-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 wow bounceIn">
+						<div class="section-title">
+							<h2 class="wow fadeInLeft" data-wow-delay="0.3s">Our <b>Speakers</b></h2>
+						</div>
+					</div>
+					<div id="owl-speakers" class="owl-carousel">
+						<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.5s" style="padding-left:0px;padding-right:0px;">
+							<div class="speakers-wrapper">
+								<img src="images/1.png" class="img-responsive" alt="To Be Announced">
+								<div class="speakers-thumb">
+									<h3>Name</h3>
+									<h5>Designation</h5>
+								</div>
+							</div>
+						</div>
+						<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.5s" style="padding-left:0px;padding-right:0px;">
+							<div class="speakers-wrapper">
+								<img src="images/1.png" class="img-responsive" alt="To Be Announced">
+								<div class="speakers-thumb">
+									<h3>Name</h3>
+									<h5>Designation</h5>
+								</div>
+							</div>
+						</div>
+						<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.5s" style="padding-left:0px;padding-right:0px;">
+							<div class="speakers-wrapper">
+								<img src="images/1.png" class="img-responsive" alt="To Be Announced">
+								<div class="speakers-thumb">
+									<h3>Name</h3>
+									<h5>Designation</h5>
+								</div>
+							</div>
+						</div>
+						<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.5s" style="padding-left:0px;padding-right:0px;">
+							<div class="speakers-wrapper">
+								<img src="images/1.png" class="img-responsive" alt="To Be Announced">
+								<div class="speakers-thumb">
+									<h3>Name</h3>
+									<h5>Designation</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Schedule  -->
+		<section id="sche" class="parallax-section">
+			<div class="container">
+				<div class="row">
+
+					<div class="wow fadeInLeft col-md-12 col-sm-12" data-wow-delay="0.4s">
+						<div class="section-title">
+							<h2>Our <b>Schedule</b></h2>
+						</div>
+					</div>
+
+					<div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.5s">
+						<ul class="nav nav-tabs" role="tablist" style="border-bottom:0px;">
+							<li class="active"><a href="#100" aria-controls="fday" role="tab" data-toggle="tab"><span>Day 01</span><br><br>18<sup>th</sup> June</a></li>
+							<li><a href="#200" aria-controls="sday" role="tab" data-toggle="tab"><span>Day 02</span><br><br>19<sup>th</sup> June</a></li>
+							<li><a href="#300" aria-controls="tday" role="tab" data-toggle="tab"><span>Day 03</span><br><br>20<sup>th</sup> June</a></li>
+							<li><a href="#400" aria-controls="tday" role="tab" data-toggle="tab"><span>Day 04</span><br><br>21<sup>th</sup> June</a></li>
+							<li><a href="#500" aria-controls="tday" role="tab" data-toggle="tab"><span>Day 05</span><br><br>22<sup>th</sup> June</a></li>
+							<li><a href="#600" aria-controls="tday" role="tab" data-toggle="tab"><span>Day 06</span><br><br>23<sup>th</sup> June</a></li>
+							<li><a href="#700" aria-controls="tday" role="tab" data-toggle="tab"><span>Day 07</span><br><br>24<sup>th</sup> June</a></li>
+						</ul>
+						
+						<div class="tab-content">
+
+							<div role="tabpanel" class="tab-pane active" id="100">
+								<div class="col-md-12 col-sm-12">
+									<p><i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntro to OOP concepts<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntro to Java basic syntax<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspAdvance functionalities of Java - Threads, Background Activities, Inheritance, etc.<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntro to Android Studio<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspActivity life cycle</p>
+								</div>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="200">
+								<div class="col-md-12 col-sm-12">
+									<p><i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspBuilding basic layouts<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspConnecting Java backend with layouts<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspBuilding Advance layouts<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntro to UI components<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntro to gradle and importing libraries</p>
+								</div>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="300">
+								<div class="col-md-12 col-sm-12">
+									<p><i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntents and Activities<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspFragments and Custom classes<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspList Views and Adapters<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspDatabase - both oﬄine and online (Firebase)</p>
+								</div>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="400">
+								<div class="col-md-12 col-sm-12">
+									<p><i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspJSON parsing and Web View<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspHTTP Networking<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspThreading and Parallelism<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspPreferences<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspAPI calls</p>
+								</div>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="500">
+								<div class="col-md-12 col-sm-12">
+									<p><i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntro to blockchain, crypto currencies and Dapps<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspBlockchain protocols<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspIntro to cryptography and hash functions<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspDesign of consensus of protocols</p>
+								</div>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="600">
+								<div class="col-md-12 col-sm-12">
+									<p><i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspSecurity patterns for networking<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspDesign of network architecture<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspMaking Smart Contracts - If going with crypto<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspCombining Android app and blockchain</p>
+								</div>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="700">
+								<div class="col-md-12 col-sm-12">
+									<p><i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspContinue of combining app and blockchain<br>
+										<i class="fa fa-long-arrow-right " aria-hidden="true"></i>&nbsp&nbsp&nbspSubmission of challenge and result announcement</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!--  -->
+			</div>
+		</section>
+
+		<!-- Register  -->
+		<section id="register" class="parallax-section">
+			<div class="container">
+				<h2 class="wow fadeInLeft" data-wow-delay="0.3s">Register <b>Here</b></h2>
+				<hr>
+				<section id="registeration">
+					<div class="container">
+						<div class="row">
+
+							<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+								<div class="registeration-plan">
+									<div class="registeration-title">
+										<h3>DA-IICT Student</h3>
+									</div>
+									<p>IEEE Member</p>
+									<h4>&#8377; 800</h4>
+									<p></p>
+									<p>Non-IEEE Member</p>
+									<h4>&#8377; 1000</h4>
+									<a href=""><button class="btn btn-default section-btn1 wow fadeInRight" data-wow-delay="0.6s">Buy Now</button></a>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+								<div class="registeration-plan">
+									<div class="registeration-title">
+										<h3>Non DA-IICT Student</h3>
+									</div>
+									<p>IEEE Member</p>
+									<h4>&#8377; 1000</h4>
+									<p></p>
+									<p>Non-IEEE Member</p>
+									<h4>&#8377; 1200</h4>
+									<a href=""><button class="btn btn-default section-btn1 wow fadeInRight" data-wow-delay="0.6s">Buy Now</button></a>
+								</div>
+							</div>
+
+							<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+								<div class="registeration-plan">
+									<div class="registeration-title">
+										<h3>After 5<sup>th</sup> June</h3>
+									</div>
+									<p>IEEE Member</p>
+									<h4>&#8377; 1200</h4>
+									<p></p>
+									<p>Non-IEEE Member</p>
+									<h4>&#8377; 1400</h4>
+									<a href=""><button class="btn btn-default section-btn1 wow fadeInRight" data-wow-delay="0.6s">Buy Now</button></a>
+								</div>
+							</div>
+
+						</div>
+						<a target="_blank" href="https://goo.gl/forms/e2AhkeDzNqVA5Ecq1"><button class="btn btn-default section-btn1 wow fadeInRight" data-wow-delay="0.6s">Register Now</button></a>
+					</div>
+
+				</section>
+			</div>
+		</section>
+
+		<!-- Contact  -->
+		<section id="contact" class="parallax-section">
+			<div class="container">
+					<h2 class="wow fadeInLeft" data-wow-delay="0.3s" style="text-align:center; padding-bottom:20px; color:#24b8ff;">Contact <b>Us</b></h2>
+				<div class="row">
+
+					<div class="col-md-6">
+						<div id="map" style="width:100%;height:400px;"></div>
+					</div>
+
+					<div class="col-md-6">
+						<h4>Contact Number</h4>
+						<p><a href="">+91 XXX XXX XXXX</a></p>
+					</div>
+
+					<div class="col-md-6">
+						<h4>Find Us At</h4>
+						<p>IEEE ROOM, CLUB HOUSE - 2, DA-IICT, GANDHINAGAR – 382007 GUJARAT, INDIA</p>
+					</div>
+
+					<div class="col-md-6">
+						<h4>Mail Us At</h4>
+						<p><a href="mailto:summerschooldaiict2018@gmail.com">summerschooldaiict2018@gmail.com</a></p>
+					</div>
+
+					<div class="col-md-6">
+						<div class="wow fadeInLeft" style="text-align: center">
+							<a href="https://www.facebook.com/ieeesbdaiict" target="_blank"><i class="fa fa-facebook-square"></i></a>&nbsp&nbsp&nbsp
+							<a href="mailto:summerschooldaiict2018@gmail.com"><i class="fa fa-envelope-o"></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer  -->
+		<div class="footer wow fadeInDown" id="sitemap">
+			<div class="container">
+				<div class="col-md-4 footer-left">
+					<h4>Site Map</h4>
+
+					<div class="mid-btm">
+						<p><a href="#popup1">About DAIICT</a>
+						<br><a href="#popup2">About IEEE</a>
+						<br><a href="#popup3">Region 10</a>
+						<br><a href="#popup4">IEEE SB DAIICT</a>
+						<br><a href="#popup5">IEEE Gujarat Section</a>
+						<br><a href="execomm.html">Branch Execomm</a>
+						<br><a href="#popup7">Bylaws</a></p>
+					</div>
+				</div>
+
+				<div class="col-md-4 footer-left">
+					<h4>DA-IICT</h4>
+					<p></p>
+					<a href="http://www.daiict.ac.in" target="_blank"> <img src="images/dalogo.png" class="img-responsive1" width="50%" height="50%"></a>
+				</div>
+
+				<div class="col-md-4 footer-right">
+					<h4>Other Links</h4>
+					<p><a href="http://ieee.daiict.ac.in/ss18/" target="_blank">Summer School 2018</a>
+					<br><a href="http://ieee.daiict.ac.in/ifest18/" target="_blank">i.Fest 2018</a>
+					<br><a href="http://ias.daiict.ac.in/" target="_blank">IAS</a>
+					<br><a href="#popup10">WIE</a>
+					<br><a href="https://www.mtt.org/" target="_blank">MTT-S</a>
+					<br><a href="#popup11">SIG Embedded</a>
+					<br><a href="#popup12">SIG Mobile Apps</a>
+					<br><a href="#popup13">SIG Machine Intelligence</a>
+
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<div class="copyright wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
+			<div class="container">
+				<p>© 2018 IEEE SB DAIICT. All rights reserved | Design by <b>Shail Kothari</b>, IEEE SB, DA-IICT</p>
+			</div>
+		</div>
+			
+		<!-- POPUP -->
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<h2>DA-IICT</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<div class="content">
+				<p>DA-IICT at Gandhinagar represents Wave-4 of educational innovation in Gujarat. The first wave was the nationalist wave and led to Gandhian experiments in education including Nai Talim. The Gujarat Vidyapith established in 1920 was a hybrid model of a university based on Gandhian principles. The second wave led to the establishment of a whole range of educational institutions in Gujarat, mainly private colleges. The third wave, an inspired one, was spearheaded by the industrialist Kasturbhai Lalbhai and the scientist Vikram Sarabhai and led to the establishment of a network of national institutes of international renown. A whole array of remarkable intellectuals provided the leadership of these institutes. It was in Wave 4 when the focus shifted to higher education and private participation. One of the institutes created during this period is DA-IICT. It is a University under the State Act of Gujarat. The DA-IICT was established in Gandhinagar in 2001. It is the only advanced institute named after the Late Dhirubhai Ambani, the founder of Reliance Group. The architecture of DA-IICT is functional, but what surrounds it is a fascinating garden. The entire design was oriented to "Preserving the Environment". The different blocks are located such that there is minimum damage to trees. Most of the 2566 trees chosen are indigenous varieties. The lawn area measures roughly 50,000 square meters with 3900 square meters of wild St Augustine grass. 3400 Bamboos were planted to mask the concrete. Next to the library stands the herb garden with 35 varieties of rare medicinal plants. The entire landscape was planned and developed in a manner that no excess rainwater is lost and all irrigation is carried out with recycled water. Over 30 species of birds are observed in the campus.
+					<br><br><a href="http://daiict.ac.in">More about DAIICT</a>
+				</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup2" class="overlay">
+			<div class="popup">
+				<h2>IEEE History</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<div class="content">
+				<p>The IEEE formed in 1963 with the merger of the AIEE (American Institute of Electrical Engineers, formed in 1884), and the IRE (Institute of Radio Engineers, formed in 1912). From its earliest origins, the IEEE has:
+					<br>· Advanced the theory and application of electro technology and allied sciences.
+					<br>· Served as a catalyst for technological innovation.
+					<br>· Supported the needs of its members through a wide variety of sches and services.
+					<br>Through its members, the IEEE is a leading authority in technical areas ranging from computer engineering, biomedical technology and telecommunications, to electric power, aerospace and consumer electronics, among others. The Institute of Electrical and Electronics Engineers (IEEE) is devoted to advancing the theory and application of electrical engineering, electronics, and computing.
+					<br><br><a href="https://ieee.org">More about IEEE </a>
+					<br><a href="https://www.ieee.org/publications_standards/publications/periodicals/index.html">IEEE Publications/Journals </a>
+					<br><a href="https://www.ieee.org/publications_standards/index.html">IEEE Standards </a>
+					<br><a href="https://www.ieee.org/about/awards/DF_IEEE_MIG_NAV_86257">IEEE Awards</a>
+				</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup3" class="overlay">
+			<div class="popup">
+				<h2>IEEE Region 10</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<div class="content">
+					<p>The IEEE Region 10, or sometimes referred to the Asia Pacific Region comprises 4 Councils, 47 Sections, 6 Sub-sections, 211 Chapters and 245 student branches. It covers a geographical area stretching from South Korea and Japan in the north-east to New Zealand in the south, and Pakistan in the west. With a membership in of about 60,000, it is one of the largest and fastest growing regions in IEEE. There are 10 sections in India which comes under IEEE Region 10.
+					<br><br><a href="https://www.ieeer10.org">More about Region 10</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup4" class="overlay">
+			<div class="popup">
+				<h2>IEEE SB DA-IICT</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<div class="content">
+					<p>DA-IICT is an academic institution promoted by the Dhirubhai Ambani Foundation and the Reliance Group,primarily aimed to impart Information and Communication Technology (ICT) education of international standards. Established amidst the lush green corridor of Gandhinagar, Gujarat, DA-IICT lives for furtherance of education,research, and training in ICT. DA-IICT commenced activities from August 2001. DA-IICT is a research led institute which houses world class facilities such well equipped labs with latest equipment and software, modern lecture theaters, a multi-cuisine canteen and on campus residence. The Institute of Electrical and Electronic Engineers Student Branch at DA-IICT endeavors to promote student awareness among students on the opportunities that exist in the field of electronics and electrical engineering. Our objective is to bridge the gap between industry and students studying in technology-related fields, while promoting and providing an intellectually stimulating university environment for the student body. IEEE Student Branch, DA-IICT aims to provide an intereactive platform for students to develop proffessional and technical abilities. Since the inception, it is successful in organizing various events with well defined objectives.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup5" class="overlay">
+			<div class="popup-scroll">
+				<h2>IEEE Gujarat Section</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<div class="content">
+					<p>The IEEE Gujarat section is one of the small and most important one in the Asia-Pacific region. If for no other reason than that Mahatma Gandhi was a Gujarati by birth, and had spearheaded the Indian Freedom Struggle from his ashram at Ahmedabad where the IEEE Gujarat Section is headquartered.
+					<br><br>
+					IEEE activities in Gujarat first started in 1988 at the city of Vadodara (earlier known as Baroda), when first unit of IEEE student branch was established at the Dept. of Electrical Engineering, Faculty of Technology & Engineering, M.S.University. Dr. A. K. Aggarwal was the first Branch Counselor. Mr. J. S. Negi, the then Chief Executive of M/s Jyoti Ltd, had taken the initiative for submitting the petition for forming the Vadodara Sub-Section under the Bombay Section. IEEE accepted the petition and the Vadodara sub-section was formed with Mr. J. S. Negi as the interim Chair in the year 1988.
+					<br><br>
+					Later IEEE agreed to change the name of the entity to Gujarat Sub-section. On 15th August 1990 the Sub-section was upgraded to a full fledged Section to take its place as one among the 300 sections in the world spread out over 150 countries. The IEEE Gujarat University Student Branch was the next student branch unit established in 1994. The IEEE Gujarat Section was carved out from the IEEE Bombay Section mainly for logistic reasons.
+					<br><br>
+					Gujarat Section was first brought to international attention in 1997 with the holding a twin conference on’ Internet Security’ and EEE in the petroleum sector both downstream and upstream. This twin conference was held in the premises of the Institute of Reservoir Studies of the ONGC. Prominent IEEE figures who attended included Dr. Charles Rubenstein then the editor of the IEEE Transactions in Engineering Management. The conference was followed by the visit of the Technical Activities Board (TAB) of the IEEE led by President IEEE Dr. Kenneth Laker, President-Elect Dr. Mike Adler, Mr. Pete(Wes) Spencer a Power Utilities owner, Mrs. Mary Ward-Callan the Managing Director of the TAB and Ms. Fanny Su Behn Hoi of the IEEE Region 10 HQ at Singapore. Dr. Vijay Bhargava, the then candidate for the post of the President IEEE Communications Society and Mrs. Laker also accompanied the group. On this occasion, a student branch was inaugurated at the Nirma Institute of Technology.
+					<br><br>
+					Gujarat Section has always been pioneer in organizing sches for professional and students. Its annual event ‘Sampark’ gives a platform to student members to design IEEE events of the year as per their own need and requirement. This helps IEEE student members of the Section to be their own leader. ‘Sampark’ had also been featured in one of the issue of ‘The Institute’.
+					<br><br>
+					<a href="http://ieeegujaratsection.org/">More about IEEE Gujarat Section</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup7" class="overlay">
+			<div class="popup-scroll">
+				<h2>Bylaws</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<button class="collapsible">Article 1 : General</button>
+				<div class="content1">
+				<p>1. The Executive Committee shall be selected by the nomination file by the members of the last year's Volunteer Team (as on Dec 31), preferably in Jan. The Executive Committee comprises of:
+					<br>a) Chairperson
+					<br>b) Vice Chairperson
+					<br>c) Secretary
+					<br>d) Treasurer
+					<br>e) Webmaster
+					<br><br>2. A Volunteer Team of 10-12 members shall be elected for which election shall be conducted as far as possible in Jan every year. This team will be subjected to expand twice in a year to include newly joined active members in the team (selected by current Executive Committee members).
+					<br><br>3. Term of each Executive Committee and the Volunteer Team shall be at least one calendar year.
+				</p>
+				</div>
+				<button class="collapsible">Article 2 : Qualifications for being selected to an executive officer position</button>
+				<div class="content1">
+				<p>All prospective executive officers must be an IEEE Student member.
+					<br>All prospective executive officers must be a member of the last Volunteer Team as on Dec 31.
+					<br>All prospective executive officers must be in good academic standing with the Institute (at least 6.0/10.0 CPI).
+					<br>All prospective executive officers from B-Tech course or Post Graduation course must have completed a minimum of three or one full semester (autumn or winter) at the Institute, respectively.
+					<br>Students of final semester are not eligible for nominations for aforementioned executive officer positions.</p>
+				</div>
+				<button class="collapsible">Article 3 : Qualifications for being elected to a Volunteer Team member</button>
+				<div class="content1">
+				<p>1. All prospective Volunteer Team members must be an IEEE Student member.
+					<br>2. All prospective Volunteer Team members must be in good academic standing with the Institute (at least 6.0/10.0 CPI).
+					<br>3. All prospective Volunteer Team members from B-Tech course or Post Graduation course must have completed a minimum of three or one full semester (autumn or winter) at the Institute, respectively.
+					<br>4. Students of final semester are not eligible for nominations for Volunteer Team member.
+					<br>5. A person can file nomination for only one post at a time.</p>
+				</div>
+				<button class="collapsible">Article 4 : Qualifications for being selected to a Volunteer Team member (Additionally to all the Requirements stated in Article 3)</button>
+				<div class="content1">
+				<p>1. All prospective Volunteer Team members must have recently volunteered in at least two activities of the IEEE Student Branch, DA-IICT.</p>
+				</div>
+				<button class="collapsible">Article 5 : Conduction of Volunteer Team member's Elections</button>
+				<div class="content1">
+				<p>At least one member of the last executive committee, who is not contesting for any post, shall preside at the Volunteer Team member's elections, in the absence of fulfillment of this condition the branch counselor shall preside at the elections. 10 nominees with maximum votes will be declared as the member of the Volunteer Team. In case of tie up Branch counselor will have the final say.</p>
+				</div>
+				<button class="collapsible">Article 6 : Conduction of Executive Committee officer's selection</button>
+				<div class="content1">
+				<p>The selection of the officers will be on the basis of the individual credit earned.
+					<br>The order of the selection will be Chair, Vice Chair, Secretary and Treasurer.
+					<br>In a general branch meeting all the members of the last Executive Committee and the Branch Counselor will give certain credits (on the scale of 10) to each competitor for each post.
+					<br>Nominee with maximum credit will be declared winner for that particular post.
+					<br>In case no one files nomination for any post/s then the Branch Counselor and the last Executive Committee will nominate a member/s from the last Volunteer Team (as on Dec 31) for that post/s.
+					<br>In case of tie up Branch counselor will have the final say.</p>
+				</div>
+				<button class="collapsible">Article 7 : Expansion of the Volunteer Team (Twice A Year)</button>
+				<div class="content1">
+				<p>1. Every twice in a year(probably in April and November) nomination will be invited from the IEEE Student Branch member who are not the member of Volunteer Team.
+					<br>2. In a general branch meeting all the members of the Volunteer Team, Executive Committee and Branch Counselor will give certain credits(on the scale of 10) to each nominee.
+					<br>3. Nominee crossing the threshold of 6*total number of person giving credit will be declared as the new member of the Volunteer Team.
+					<br>4. In case no one able to cross the threshold then no expansion will be done.</p>
+				</div>
+				<button class="collapsible">Article 8 : Nomination for additional positions</button>
+				<div class="content1">
+				<p>1. The following positions would be filled at discretion of the branch counselor.
+					<br><br>a. Batch representative. (If IEEE members from a respective batch are more than 10, the branch counselor, the current Executive Committee and the current Volunteer Team would select the batch representative).</p>
+				</div>
+				<button class="collapsible">Article 9 : Inactivity/Expulsion from Volunteer team and Executive committee.</button>
+				<div class="content1">
+				<p>1. The inactivity of a Volunteer/officer is defined as:
+					<br>a. Not attending the branch meetings & Showing disinterest in the branch affairs.
+					<br>b. Not performing the aforementioned duties.
+					<br>c. Not abiding by the constitution of the Team/Committee.
+					<br>d. Any kind of threatening behavior using the position of office-holder.
+					<br><br>2. Any Volunteer/officer is subject to expulsion by the Team/Committee on grounds of the aforementioned reasons.
+					<br>3. Expulsion may be initiated by any Team member or officer, by mailing to the Counselor.
+					<br>4. The Counselor will have to call an urgent branch meeting with in 3 working days of receiving such mail.
+					<br>5. The process of expulsion shall be carried out in the branch meeting. The member shall be expelled by a 2/3rd majority in the Team + Committee members (present in the meeting), with consent of Counselor.</p>
+				</div>
+				<button class="collapsible">Article 10 : Officer Transition procedures</button>
+				<div class="content1">
+				<p>1.All executive officers shall maintain a notebook recording their experiences for the academic year. This notebook should contain a written job description and a dynamic "best practices" document which records past sche successes and failures.
+					<br>2.The secretary shall be responsible for maintaining a branch notebook, which must contain copies of the following documents:
+					<br>a. Annual plan
+					<br>b. Annual report
+					<br>c. Officer meeting minutes
+					<br>d. Attendance rosters for faculty presentations and general meetings.
+					<br><br>3.Counselor shall convene a general branch meeting within a week of announcement of the results for the elections and selections. The agenda of the meeting would be handing over of responsibilities to the newly selected executive committee and elected Volunteer member.
+					<br>4.Newly selected officers and elected Volunteer Team member shall take over office after this meeting.
+					<br>5.Outgoing officers shall then hand over their notebooks to the incoming officers.
+					<br>6.Chairman and Treasurer of the DA-IICT Student Branch shall be one of the authorized signatories along with the Branch Counselor for all financial matters and transactions.
+					<br>7.No product/service shall be hired/purchased on cash unless approved by above two of three authorized signatories.
+					<br>8.Chairman of branch shall be responsible for preparing Annual Plan for the branch. Draft of annual plan shall be prepared by September month for the coming year.
+			
+			
+					<br><br><br>* In case of any discrepancy Branch counselor decision will be final and binding to all.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup10" class="overlay">
+			<div class="popup-scroll">
+				<h2>IEEE WIE, Affinity Group</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<img src="images/wie.png" style="margin-left:37%;" height="200px" width="200px">
+				<div class="content">
+					<p>WIE is largest international professional group dedicated to promoting women engineers and scientist. The idea is to provide the young women with a platform, encouragement and inspiration to come up with confidence and excellence in the technical career of Engineering.WIE is an effort to motivate the women to be a part of science, Technology and Engineering by bringing all men and women with such ambitions to put a joint effort towards this.
+					<br><br>
+					IEEE aims to achieve this by taking following steps: Recognizing their achievements in electrical and electronics engineering through IEEE awards. Promoting WIE at major technical conferences. We have also taken a few initiatives like discounts in membership for girls in order to increase the number of participants. Advocate women in leadership roles in IEEE governance, providing assistance and support to the activities of these groups. Facilitating sches and activities for promoting girls' participation. We are planning to organize an interactive session by two of our seniors who were selected in Google, women of India contest.
+					<br><br>
+					Administering the STAR sche to mentor young women in junior and high schools. IEEE student branch is looking forward to deliver few lectures to the school students of Gandhinagar and Ahmadabad in order to inspire girls to take up engineering as a career.
+					<br><br>
+					WIE at DA-IICT: Journey so far DA-IICT IEEE Student branch too has a "Women in Engineering Affinity Group" which was established in 2009. In its first year of existence, WIE organized a workshop on "Digital Image Processing" offering rebate to girls attending the workshop. The event saw an improved participation of girls not only from DA-IICT but also from other student branches.
+					<br><br>
+					DA-IICT WIE group had applied for the above mentioned grants for the year 2010 and had been granted the Sangammam Fund for humanitarian activities. The activities planned on the humanitarian front included a visit to a local school "Kadi School" on 23rd September, 2010 to counsel the senior students on the career opportunities they could consider after finishing secondary school. On the other hand, WIE at DA-IICT organized an invited talk by the members of SEWA ("Self Employed Women's Association", an NGO based in Ahmedabad, Gujarat) on the 25th September, 2010 during "i.fest" (DA-IICT's annual inter-college technical fest organized by the IEEE Student branch). The speakers from SEWA talked about the way rural Indian women are being assisted in learning the applications of ICT in their daily lives to make a living and become independent.
+					<br><br>
+					This year, we intend to take WIE at a different platform by targeting national participation and helping other IEEE student branches establish WIE affinity groups. Among the various initiatives that the WIE 2011-2012 executive committee intends to take is that of K-sharing or Knowledge sharing. It is live video conferencing with professors, scientists and researchers from other organizations and institutes. WIE Executive Committee hopes to provide benefits of k-sharing to students in rural setup as well.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup11" class="overlay">
+			<div class="popup-scroll">
+				<h2>SIG Embedded Programming</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<img src="images/embedded.png" style="margin-left:20%;"  width="60%">
+				<div class="content">
+					<p>Special Interest Group ~ Embedded (hereafter SIG~Embedded) was established in Jan’ 2011 by IEEE Student Branch, DA-IICT. Embedded Systems are the true products and testaments of ICT for which our institute has been the pioneer. Embedded System combines the nitty-gritty of hardware embedded with the functionalities of software which makes it most custom and customizable products. Embedded Systems have always captured the imaginations of students in DA-IICT. IEEE Student Branch, DA-IICT wanted to promote the cult of embedded systems in the student community and thus the concept and subsequently SIG~Embedded was established.
+					<br><br>
+					SIG~Embedded has been organizing sessions on theory and practical approaches for embedded systems since. SIG~Embedded plans to improve and diversify its activities by creating a knowledge bank which will last for the future enthusiasts and will be continuously be built and expanded upon. The knowledge and resources gathered over time will serve the enthusiasts in present and future alike, for future enthusiasts the resources will be a part of glorious legacy whose foundation can only be set in present. The efforts of SIG~Embedded subsequently can be helpful in spreading the knowledge gained, to students of other educational institutions be they higher centres of education or senior secondary schooling and thus also inspire and encourage them to start similar SIGs.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup12" class="overlay">
+			<div class="popup-scroll">
+				<h2>SIG Mobile Apps</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<img src="images/mobile.png" style="margin-left:20%;" width="60%">
+				<div class="content">
+					<p>SIG Mobile Applications is a group of enthusiasts for developing mobile applications, especially Android apps. SIG Mobile conducts regular sessions every week where we try to cover the basics of Android app development. Apart from that, talks by people working in industry, app competitions, and project mentoring and special talks on Android products are some of the other activities.
+					<br><br>
+					This time we plan to have parallel sessions – one for the beginners for learning the basics and another Advanced where students who already know the basics can learn advanced topics like Using APIs, Navigation Drawer, Working with Databases, Fetching Data from/to Server, Material Design etc. Once well versed with such topics, students can pick up projects under the mentoring of SIG Team members. Few upcoming projects include the Webmail app, the Synapse-newsletter, SBG Events Calendar and many more.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="popup13" class="overlay">
+			<div class="popup-scroll">
+				<h2>SIG Machine Intelligence</h2>
+				<a class="close" href="#sitemap">&times;</a>
+				<img src="images/machine.png" style="margin-left:20%;" width="60%">
+				<div class="content">
+					<p>Machine Intelligence-SIG aims to build a community of Machine learning and AI enthusiasts who would engage in discussions and collaborative projects and at the same time, foster a healthy environment and support beginners.
+					<br><br>
+					Presently, MI-SIG conducts bi-weekly machine learning hands-on sessions for sophomore beginners. Alongside, it also shares all reading materials, video lectures and updates in the field to help the students learn progressively.
+					<br><br>
+					MI-SIG plans to begin exciting group projects with a mentor assigned to each group. This will help the students get a hold of the subject matter by putting their theoretical knowledge into practical use.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- //POPUP -->
+
+		<!-- To top -->
+		<a href="#back-top" class="go-top"><img src="images/top.png"></a>	
+
+		<!-- JS  -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.parallax.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<!-- Popup -->
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+				});
+			}
+		</script>
+
+		<!-- Gallery -->
+		<script>
+			function openModal() {
+			document.getElementById('myModal').style.display = "block";
+			}
+
+			function closeModal() {
+			document.getElementById('myModal').style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+
+		<!-- countdown -->
+		<script type="text/javascript">
+			const second = 1000,
+			minute = second * 60,
+			hour = minute * 60,
+			day = hour * 24;
+
+			let countDown = new Date('Jun 10, 2019 00:00:00').getTime(),
+			x = setInterval(function() {
+
+				let now = new Date().getTime(),
+					distance = countDown - now;
+
+				document.getElementById('days').innerText = Math.floor(distance / (day)),
+					document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+					document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+					document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+			}, second)
+		</script>
+		
+		<!-- Map -->
+		<script>
+			function myMap() {
+				var mapCanvas = document.getElementById("map");
+				var myCenter = new google.maps.LatLng(23.188546, 72.629720);
+				var mapOptions = { center: myCenter, zoom: 16 };
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+				var icon = {
+					url: "images/dalogo.png",
+					scaledSize: new google.maps.Size(40, 40), // scaled size
+				};
+				var marker = new google.maps.Marker({
+					position: myCenter,
+					icon: icon,
+					animation: google.maps.Animation.BOUNCE
+				});
+				marker.setMap(map);
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ-bSzZ8xCvYerg60pxFw6CO0StW1C7R8&callback=myMap"></script>
+
+	</body>
+</html>
