@@ -152,6 +152,9 @@ background-color: transparent;
   color: #fff;
   font-size: 50px;
 }
+#home .hm{
+  margin-top: 100px;
+}
 /* //Home */
 
 /* Line */
@@ -742,13 +745,16 @@ font-weight:700;
     line-height: 20px;
   }
   #home h1{
-    font-size: 20px;
+    font-size: 30px;
   }
   #home h2{
-    font-size: 15px;
+    font-size: 25px;
   }
   #home h4{
-    font-size: 10px;
+    font-size: 17.5px;
+  }
+  #home .hm{
+    margin-top: 50px;
   }
   #abt img,
   #detail .col-md-4,
@@ -763,15 +769,13 @@ font-weight:700;
   }
   #sponsors img {
     padding-top: 22px;
+    width: 50%;
   }
   #contact .contact_detail {
     margin-top: 82px;
   }
-  #contact img{
-    padding-top: 15px;
-  }
   #home {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
   }
   .icon_box_two{
@@ -783,6 +787,7 @@ font-weight:700;
   .countdown ul{
     font-size: 5px;
     margin-top: 25%;
+    padding-left: 0px;
   }
 
 }
