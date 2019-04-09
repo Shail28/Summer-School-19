@@ -393,7 +393,7 @@ img.hover-shadow {
 }
 #speakers img {
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     padding-right:10px;
 }
@@ -767,9 +767,9 @@ font-weight:700;
   #sche img {
     padding-bottom: 32px;
   }
-  #sponsors img {
-    padding-top: 22px;
-    width: 50%;
+  #speakers img {
+    margin-left: 15%;
+    width: 70%;
   }
   #contact .contact_detail {
     margin-top: 82px;
