@@ -127,7 +127,7 @@ background-color: transparent;
 
 /* Home  */
 #home {
-  background: url('../images/bg.gif') 50% 0 repeat-x fixed;
+  background: url('../images/bg.jpeg') 50% 0 repeat-x fixed;
   background-color: #000000;
   -webkit-background-size: cover;
   background-size: cover;
@@ -146,14 +146,18 @@ background-color: transparent;
 }
 #home h2 {
   letter-spacing: 2px;
-  font-size: 40px;
+  font-size: 45px;
 }
 #home h1 {
-  color: #fff;
-  font-size: 50px;
+  color: #24b8ff;
+  font-size: 55px;
 }
 #home .hm{
   margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: auto;
+  margin-left: 22.5%;
+  color: #fff;
 }
 /* //Home */
 
