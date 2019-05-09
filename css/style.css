@@ -127,7 +127,7 @@ background-color: transparent;
 
 /* Home  */
 #home {
-  background: url('../images/bg.jpeg') 50% 0 repeat-x fixed;
+  background: url('../images/bg.gif') 50% 0 repeat-x fixed;
   background-color: #000000;
   -webkit-background-size: cover;
   background-size: cover;
@@ -146,18 +146,18 @@ background-color: transparent;
 }
 #home h2 {
   letter-spacing: 2px;
-  font-size: 45px;
+  font-size: 48px;
 }
 #home h1 {
-  color: #24b8ff;
-  font-size: 55px;
+  color: #fff;
+  font-size: 65px;
 }
 #home .hm{
-  margin-top: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  /* background-color: rgba(0, 0, 0, 0.5);
   width: auto;
   margin-left: 22.5%;
-  color: #fff;
+  color: #fff; */
 }
 /* //Home */
 
@@ -747,6 +747,11 @@ font-weight:700;
   }
   .custom-navbar .navbar-brand {
     line-height: 20px;
+  }
+  .custom-navbar .navbar-brand img{
+    margin-top:-7.5px;
+    width: 75px;
+    height: 37.5px;
   }
   #home h1{
     font-size: 30px;
